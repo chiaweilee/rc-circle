@@ -1,0 +1,26 @@
+.bg {
+  position: relative;
+  background: linear-gradient(-45deg, #fffbe6, #fcffe6, #e6fffb, #f9f0ff);
+  background-size: 400% 400%;
+  animation: gradientBG 1s ease infinite;
+  > div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+  }
+}
+
+@keyframes gradientBG {
+  0% {
+    background-position: 0 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0 50%;
+  }
+}

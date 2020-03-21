@@ -1,0 +1,79 @@
+---
+name: Props
+route: /
+order: -1
+sidebar: true
+---
+
+import Circle from './';
+import styles from './demo.less';
+
+# Circle Component
+
+## Feature
+
+### transparent
+
+<div className={styles.bg} style={{ width: '100px', height: '100px' }}>
+  <Circle radius={50} width={5} color={'red'} />
+</div>
+
+## Basic usage
+
+<Circle />
+
+```js
+import Circle from 'rc-circle';
+```
+
+```jsx
+<Circle />
+```
+
+## Props
+
+### radius
+
+<Circle radius={50} />
+
+```jsx
+<Circle radius={50 /* px */} />
+```
+
+### width
+
+<Circle radius={50} width={10} />
+<Circle radius={50} width={40} />
+<Circle radius={50} width={50} />
+
+```jsx
+<Circle radius={50 /* px */} width={10 /* px */} />
+<Circle radius={50 /* px */} width={40 /* px */} />
+<Circle radius={50 /* px */} width={50 /* px */} />
+```
+
+### color
+
+<Circle radius={50} color={'red'} />
+<Circle radius={50} color={'#f0f'} />
+<Circle radius={50} color={'rgba(0, 0, 0, 0.2)'} />
+
+```jsx
+<Circle radius={50} color={'red'} />
+<Circle radius={50} color={'#f0f'} />
+<Circle radius={50} color={'rgba(0, 0, 0, 0.2)'} />
+```
+
+### circleBox
+
+`content-box` | `border-box`, default `content-box`
+
+<Circle radius={50} width={10} />
+<Circle radius={50} width={10} circleBox={`content-box`} />
+<Circle radius={50} width={10} circleBox={`border-box`} />
+
+```jsx
+<Circle radius={50} width={10} />
+<Circle radius={50} width={10} circleBox={`content-box`} />
+<Circle radius={50} width={10} circleBox={`border-box`} />
+```
