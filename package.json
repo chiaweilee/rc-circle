@@ -9,6 +9,8 @@
   "scripts": {
     "start": "npm run dev",
     "dev": "father doc dev",
+    "doc": "father doc build",
+    "deploy": "father doc deploy",
     "build": "father-build",
     "lint": "npm run lint:es && npm run lint:ts && npm run lint:style",
     "lint:es": "eslint --ext .js --ext .jsx . --fix",
